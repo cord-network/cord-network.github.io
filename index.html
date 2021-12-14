@@ -22,9 +22,9 @@
 		border: none;
 	}
 	#Web_1366__2 {
-		position: absolute;
-		width: 1440px;
-		height: 729px;
+		position: fixed;
+		width: 100%;
+		height: 100%;
 		background-color: rgba(0,0,0,1);
 		overflow: hidden;
 		--web-view-name: Web 1366 – 2;
@@ -34,9 +34,11 @@
 	}
 	#hbjbbjbk {
 		position: absolute;
-		width: 745px;
-		height: 738px;
-		left: 695px;
+		/* width: 745px;
+		height: 738px; */
+		width: 60% !important;
+		/* left: 695px; */
+		right: 0px;
 		top: -10px;
 		overflow: visible;
 	}
@@ -75,24 +77,23 @@
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 61px;
+		font-size: 80px;
 		color: rgba(255,255,255,1);
 	}
 	#CORD_is_a_decentralised_infras {
 		opacity: 0.7;
 		left: 0px;
-		top: 250.204px;
+		top: 300px;
 		position: absolute;
 		overflow: visible;
 		width: 460px;
 		white-space: nowrap;
 		line-height: 24px;
-		margin-top: -3.5px;
 		text-align: left;
 		font-family: Montserrat-Regular;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 20px;
 		color: rgba(255,255,255,1);
 	}
 	#Rectangle_16 {
@@ -108,30 +109,33 @@
 	}
 	#CONTACT_US {
 		opacity: 0.996;
-		left: 19.858px;
-		top: 347.848px;
-		position: absolute;
-		overflow: visible;
-		width: 75px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 11px;
-		color: rgba(255,255,255,1);
+	bottom: -100px;
+    position: absolute;
+    overflow: visible;
+    width: 115px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255,255,255,1);
+    background: rgba(3,145,247,1);
+    padding: 15px;
+    border: 1px solid rgba(3,145,247,1);
+    border-radius: 20px;
 	}
 	#Group_120 {
 		position: absolute;
-		width: 177.032px;
-		height: 50.073px;
+		width: 200px;
+		/* height: 50.073px; */
 		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
 	#Launching_Soon {
 		left: 5px;
-		top: 590.968px;
+		top: 750px;
 		position: absolute;
 		overflow: visible;
 		width: 194px;
@@ -144,12 +148,12 @@
 		color: rgba(255,255,255,1);
 	}
 	#Group_147 {
-		position: absolute;
-		width: 106.174px;
-		height: 28.029px;
-		left: 996.989px;
-		top: 5.905px;
-		overflow: visible;
+	    position: fixed;
+    width: 106.174px;
+    height: 28.029px;
+    top: 66px;
+    overflow: visible;
+    right: 570px;
 	}
 	#Group_53 {
 		position: absolute;
@@ -3152,7 +3156,7 @@ window.application = new Application();
 </head>
 <body>
 <div id="Web_1366__2">
-	<img id="hbjbbjbk" src="hbjbbjbk.png" srcset="hbjbbjbk.png 1x, hbjbbjbk@2x.png 2x">
+	<img id="hbjbbjbk" src="CORD_right_image.svg" srcset="hbjbbjbk.png 1x, hbjbbjbk@2x.png 2x">
 		
 	<div id="Group_148">
 		<div id="Group_69">
@@ -3164,15 +3168,15 @@ window.application = new Application();
 					<span>CORD is a decentralised infrastructure advancing the <br/>quality and utility of identification systems</span>
 				</div>
 			</div>
-			<svg class="Rectangle_16">
+			<!-- <svg class="Rectangle_16">
 				<rect id="Rectangle_16" rx="17" ry="17" x="0" y="0" width="114" height="34">
 				</rect>
-			</svg>
+			</svg> -->
 			<div id="CONTACT_US">
 				<span>CONTACT US</span>
 			</div>
 		</div>
-		<img id="Group_120" src="Group_120.png" srcset="Group_120.png 1x, Group_120@2x.png 2x">
+		<img id="Group_120" src="CORD_LOGO.svg" srcset="Group_120.png 1x, Group_120@2x.png 2x">
 			
 		<div id="Launching_Soon">
 			<span>Launching Soon!</span>
