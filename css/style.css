@@ -43,7 +43,7 @@ html {
 }
 .padding-custom {
 	padding-left: 115px !important;
-	margin-top: 150px;
+	margin-top: 2%;
 }
 .display-block {
 	display: block !important;
@@ -52,7 +52,7 @@ html {
 	padding-left: 28px !important;
 }
 .main-header {
-	margin-top: 80px !important ;
+	margin-top: 6% !important ;
 	line-height: 70px;
 }
 .img-width
@@ -71,8 +71,10 @@ html {
 	}
     .text-manage
     {
-        text-align: center !important;
+        text-align: left !important;
+        margin-left: 15px !important;
         margin-right: 0px !important;
+        margin-top: 40px !important;
     }
 	.padding-custom {
 		padding-left: 20px !important;
