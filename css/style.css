@@ -11,14 +11,11 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .text-manage
 {
     text-align: right !important;
-}
-.container-fluid {
-	height: 100%;
-	overflow-y: hidden; /* don't show content that exceeds my height */
 }
 .font-Extra-bold {
 	font-family: "Urbanist_extraBold" !important;
@@ -42,7 +39,7 @@ html {
 	font-size: 30px !important;
 }
 .padding-custom {
-	padding-left: 115px !important;
+	padding-left: 82px !important;
 	margin-top: 2%;
 }
 .display-block {
@@ -52,8 +49,16 @@ html {
 	padding-left: 28px !important;
 }
 .main-header {
-	margin-top: 6% !important ;
 	line-height: 70px;
+}
+.para-width{
+	width: 700px;
+}
+.para-block{
+	margin-bottom: 42px;
+}
+.para-block p{
+	margin-bottom: 42px;
 }
 .img-width
 {
@@ -111,5 +116,8 @@ html {
     .font-regular {
         font-family: "Urbanist_semiBold" !important;
     }
+	.para-width{
+		width: auto;
+	}
 
 }
