@@ -1,147 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="fonts/stylesheet.css">
-  <title>Cord Network Webpage</title>
-</head>
-<body class="background-container">
-  <div class="container-fluid">
-  
-      <div  class="mt-5 text-manage me-4" >
-        <img src="image/Cord_Logo.svg" class="img-width"  >
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <title>Cord Network Webpage</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="brand-bg-color p-3">
+        <div class="container">
+          <img src="image/Cord_Logo.svg" class="img-width" />
+        </div>
+      </header>
+      <div class="banner brand-bg-color content-holder">
+        <div class="container">
+          <div class="banner-content">
+            <h1>
+              The blockchain <br />
+              network for frictionless <br />
+              data exchange
+            </h1>
+            <p>
+              Our blockchain infrastructure is a digital public good for
+              creating digital trust ecosystems which are scalable and secure.
+              The CORD blockchain is the foundation of the ecosystem of
+              developers, partners, operators who are transforming the way trust
+              digital data exchanges create value. Join us!
+            </p>
+            <button type="button" class="btn btn-light">Build on CORD</button>
+          </div>
+        </div>
+        <div id="particles-js"></div>
       </div>
-    <div class="row">
-      <div class="pt-5 padding-custom padding-header">
-        <div>
-          <p class="font-bold text-white font-65 mb-0 pb-0 main-header break-check " >
-            Enter the world of<br /> frictionless data<br /> exchange.
+      <div class="features brand-bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 col-sm-12">
+              <button type="button" class="btn btn-secondary btn-sm mb-3">
+                Developers Guide
+              </button>
+              <h2 class="text-light mt-1">
+                Create modular, <br />
+                interoperable systems <br />
+                of digital trust
+              </h2>
+              <p class="text-light mt-3">
+                Get access to demo scripts, building blocks and other resources
+                <br />
+                from the CORD developer community
+              </p>
+              <button type="button" class="btn btn-light">Build on CORD</button>
+            </div>
+            <div class="col-lg-5">
+              <ul class="feature-cards">
+                <li>
+                  <div>
+                    <img src="image/quick-start.svg" alt="Quick Start" />
+                  </div>
+                  <h4>Quick Start</h4>
+                </li>
+                <li>
+                  <div>
+                    <img src="image/create.svg" alt="Create" />
+                  </div>
+                  <h4>Create DID</h4>
+                </li>
+                <li>
+                  <div>
+                    <img src="image/chain.svg" alt="Chain" />
+                  </div>
+                  <h4>Chain Setup</h4>
+                </li>
+                <li>
+                  <div>
+                    <img src="image/cord-sdk.svg" alt="Cord" />
+                  </div>
+                  <h4>Integrate CORD SDK</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="join-holder text-center">
+        <div class="container">
+          <h2>Join the CORD Community</h2>
+          <p>
+            Participate in the growth of the CORD network - join our GItHub
+            organization and our Discord <br />
+            community. Get access to tools to build on CORD.
           </p>
-          <p class="font-26 font-regular p-0 text-white pt-4 mb-5 break-check" >A distributed public good
-            advancing <br />identification systems and digital trust</p>
+          <button type="button" class="btn btn-light btn-primary text-white">
+            Explore our sandbox on TestNet
+          </button>
+          <ul class="social-connect ml-0 p-0 mt-4">
+            <li>
+              <a
+                href="https://discord.com/invite/YSfBa8JsAM"
+                alt="Discord"
+                target="_blank"
+                ><img src="image/discord.png" alt="Discord"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dhiway/cord"
+                alt="Github"
+                target="_blank"
+                ><img src="image/github.png" alt="Github"
+              /></a>
+            </li>
+          </ul>
+          <img
+            src="image/community.png"
+            alt="Community"
+            class="mx-auto w-100"
+          />
         </div>
-        <div class="mt-3">
-          <h3 class="font-semibold font-30 text-white">Testnet now available!</h3>
-        </div>
-        <div class="mt-3">
-          <p class="font-semibold font-18 text-white">Staging and Main network launch pads getting ready!</p>
-         
-        </div>
-        <div class="mt-3">
-          <p class="font-18 text-white">
-	           In the meantime you can download our whitepaper <a href="whitepaper/unlock_opportunities.pdf">here</a>, and see our developer network in action <a href="https://apps.cord.network">here</a>.
-	        </p>
-        </div>
-
-        <div class="para-block mt-4">
-        <div class="mt-3">
-          <h5 class="text-white"><b>Ensuring a lifelong learning portfolio using tamper resistant, </br>durable digital records (related to SDG 4)</b>
-	        </h5>
-        </div>
-        <div class="mt-3">
-          <p class="font-18 text-white para-width">Digital credentials recorded on CORD are the necessary inputs to initiate discovery, access and enrollment in knowledge acquisition paths. The full learning lifecycle is enriched through the availability of a digital learner records system which allows for trust-based sharing and participation in a marketplace of services providers and evaluation processes. The technology can also be adopted for delivery of education and career training services to economically challenged sections of society along with addressing challenges in disbursement of aid and development funds.
-	        </p>
-        </div>
-        </div>
-
-        <div class="para-block">
-          <div class="mt-3">
-            <h5 class="text-white"><b>Enabling discovery of validated opportunities and matching skills to </br>create a higher quality of life (related to SDG 8)
-            </b>
-            </h5>
-          </div>
-          <div class="mt-3">
-            <p class="font-18 text-white para-width">Fair and long term employment opportunities require discovery services which match interested and potential applicants with employers. A lifelong learning portfolio of digital records supplemented with verifiable testimonials, badges and certificates of skills, work experience and feedback enable a vibrant marketplace of opportunities and employment types. CORD enables the participants in the marketplace to exchange and verify information through digital trust based channels. The ability to deliver fair and equitable financial and employment opportunities to vulnerable sections is also one of the important results of adoption of blockchain based management of projects
-            </p>
-          </div>
       </div>
-
-      <div class="para-block">
-        <div class="mt-3">
-            <h5 class="text-white"><b>Creating digital trust systems for better business outcomes and </br> innovative solutions at scale (related to SDG 9)
-            </b>
-            </h5>
-          </div>
-          <div class="mt-3">
-            <p class="font-18 text-white para-width">Trust infrastructure which are built around sustainable economic models provide the highest confidence in being adopted for high volume of digital credentials. CORD includes a financing approach which focuses on longevity, growth and sustainability - to provide a resilient system for a range of citizen services as well as national infrastructure roll-outs such as logistics, supply chain management, agriculture technology, financial services innovation and banking.
-            </p>
-          </div>
-        </div>
-
-        <div class="para-block">
-          <div class="mt-3">
-            <h5 class="text-white"><b>A better quality of life through equitable access to services and </br> high trust based interventions using technology (related to SDG 16)
-            </b>
-            </h5>
-          </div>
-          <div class="mt-3">
-            <p class="font-18 text-white para-width">CORD provides the utility layer which enables creation of a resilient, sustainable and economically viable ecosystem around authenticated data flows. Through service end-points which are consumed by applications and services the CORD network enables anchoring transaction records and links to information objects which present a durable model for entities participating to collaborate in this ecosystem. CORD enables discovery, access and acclaim records for a range of activities which relate to humans interacting with organizations, other individuals or machines. This provides the foundational layer of digital trust required in a verifiable dynamic data ecosystem. CORD strengthens digital sovereignty through provisioning and maintaining the ecosystem of a digital infrastructure of a publicly available distributed ledger.
-            </p>
-          </div>
-        </div>
-        <div class="mt-3">
-          <p class="font-18 text-white">If you want to know more about CORD, visit our open-source repository <a href="https://github.com/dhiway/cord">here</a> <br/>and check the SDK repository <a href="https://github.com/dhiway/cord.js">here</a>. Each of these repositories contains further <br/>documentation on how to setup the developer network, and start contributing.
-	        </p>
-        </div>
-       
-
-
-	<div class="row mt-3 font-regular pb-4">
-          <div class="font-26 row text-white padding-footer">Follow us on
-            <div class="m-2 mt-0" style="width: 23px;
-            height: 23px;">
-            <a href="https://www.facebook.com/dhiwaynetworks/" target="_blank">
-              <img src="image/FB_square.svg" alt="facebook">
-            </a>
+      <footer class="brand-bg-color pt-4 pb-4">
+        <div class="container">
+          <img src="image/Cord_Logo.svg" class="img-width" />
+          <div class="row">
+            <div class="col-lg-3">
+              <p class="text-light mt-4 pr-4">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy.
+              </p>
             </div>
-            <div class="m-2 mt-0" style="width: 24px;
-            height: 24px;">
-             <a href="https://twitter.com/dhiwaynetworks/"  target="_blank">
-              <img src="image/Twitter_square.svg" alt="twitter">
-              </a>
+            <div class="col-lg-2 text-center">
+              <p>Introduction</p>
             </div>
-            <div class="m-2 mt-0" style="width: 24px;
-            height: 24px;">
-             <a href="https://in.linkedin.com/company/dhiway"  target="_blank">
-              <img src="image/Linkedin_square.svg" alt="Linkedin">
-              </a>
+            <div class="col-lg-5 ">
+              <p>Developers</p>
             </div>
-            <div class="m-2 mt-0" style="width: 24px;
-            height: 24px;">
-             <a href="https://discord.gg/YSfBa8JsAM"  target="_blank">
-              <img src="image/discord-icon.svg" alt="Discord" style="width: 100px;">
-              </a>
+            <div class="col-lg-2">
+              <p>Write to us</p>
             </div>
           </div>
         </div>
-
-      </div>
+      </footer>
     </div>
-  </div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      /* ---- particles.js config ---- */
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 380,
+            density: {
+              enable: true,
+              value_area: 1400,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "grab",
+            },
+            onclick: {
+              enable: false,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>
