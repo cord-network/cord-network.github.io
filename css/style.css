@@ -151,7 +151,7 @@ header{
 .banner{
 	padding-top: 81px;
 	color: #fff;
-	height: 650px;
+	height: 709px;
 	position: relative;
 	overflow: hidden;
 }
@@ -204,6 +204,7 @@ header{
 .join-holder {
 	padding: 50px 0 0 0;
 	background-color: #F1F1F1;
+	overflow: hidden;
 }
 .join-holder h2, .join-holder p{
 	color: #463B6B;

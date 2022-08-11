@@ -12,6 +12,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <title>Cord Network Webpage</title>
@@ -25,7 +29,7 @@
       </header>
       <div class="banner brand-bg-color content-holder">
         <div class="container">
-          <div class="banner-content">
+          <div class="banner-content wow fadeIn" data-wow-duration="1s">
             <h1>
               The blockchain <br />
               network for frictionless <br />
@@ -46,7 +50,7 @@
       <div class="features brand-bg-color">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-xs-12 col-sm-12">
+            <div class="col-lg-6 col-xs-12 col-sm-12 wow fadeIn" data-wow-duration="1.4s">
               <button type="button" class="btn btn-secondary btn-sm mb-3">
                 Developers Guide
               </button>
@@ -63,7 +67,7 @@
               <button type="button" class="btn btn-light">Build on CORD</button>
             </div>
             <div class="col-lg-5">
-              <ul class="feature-cards">
+              <ul class="feature-cards wow fadeInRight" data-wow-duration="1.5s">
                 <li>
                   <div>
                     <img src="image/quick-start.svg" alt="Quick Start" />
@@ -94,7 +98,7 @@
         </div>
       </div>
       <div class="join-holder text-center">
-        <div class="container">
+        <div class="container wow fadeIn">
           <h2>Join the CORD Community</h2>
           <p>
             Participate in the growth of the CORD network - join our GItHub
@@ -125,7 +129,8 @@
           <img
             src="image/community.png"
             alt="Community"
-            class="mx-auto w-100"
+            class="mx-auto w-100 wow fadeInUp" 
+            data-wow-duration="0.8s" data-wow-delay="0.8s"
           />
         </div>
       </div>
@@ -164,6 +169,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       /* ---- particles.js config ---- */
       particlesJS("particles-js", {
@@ -276,6 +282,14 @@
         },
         retina_detect: true,
       });
+      wow = new WOW( {
+          boxClass:     'wow',
+          animateClass: 'animated',
+          offset:       100
+          }
+        );
+
+        wow.init();
     </script>
   </body>
 </html>
