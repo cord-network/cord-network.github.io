@@ -336,3 +336,6 @@ footer p{
 		width: 102px;
 	}
  }
+ .wow{
+	visibility: hidden;
+ }
