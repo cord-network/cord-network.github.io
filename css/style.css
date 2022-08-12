@@ -113,7 +113,8 @@ html {
     }
     .img-width
     {
-        width: 150px ;
+		width: 107px;
+		margin-bottom: 20px;
     }
     .font-regular {
         font-family: "Urbanist_semiBold" !important;
@@ -132,13 +133,25 @@ New ui styles
 .brand-bg-color{
 	background-color: #463B6B;
 }
+.text-brand{
+	color: #463B6B;
+}
 .btn-primary {
 	background-color: #463B6B;
+	border: 1px solid #463B6B;
 }
 .btn-primary:hover{
 	background-color: #fff;
 	border: 1px solid #463B6B;
 	color: #463B6B !important;
+}
+.btn-info{
+	background-color: #FFFFFF2C;
+	border: 1px solid #FFFFFF2C;
+}
+.btn-info:hover{
+	background-color: #FFFFFF2C;
+	border: 1px solid #FFFFFF2C;
 }
 
 header{
@@ -147,9 +160,10 @@ header{
     left: 0;
     right: 0;
 	z-index: 2;
+	top:0
 }
 .banner{
-	padding-top: 81px;
+	margin-top: 67px;
 	color: #fff;
 	height: 709px;
 	position: relative;
@@ -157,17 +171,36 @@ header{
 }
 .banner-content{
 	position: absolute;
-    width: 500px;
+	width: 522px;
     top: 22%;
 }
 .banner-content h1{
 	font-size: 52px;
 }
-.features{
+.features, .features-blockchain{
     padding: 118px;
 }
-.features h2{
+.features-blockchain{
+	background-color: #F1F1F1;
+}
+.features-blockchain ul{
+	text-align: center;
+}
+.features-blockchain ul li{
+	width: 218px;
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+	margin: 15px;
+}
+
+h2{
 	font-size: 52px;
+	margin-bottom: 0;
+}
+h4{
+	font-size: 22px;
+	margin-bottom: 0;
 }
 .features p{
 	font-size: 18px;
@@ -189,16 +222,33 @@ header{
     align-items: center;
     border-radius: 17px;
 	flex-direction: column;
+	list-style-type: none;
 }
 .feature-cards li h4{
 	font-size: 18px;
 	margin-top: 15px;
 }
-.btn-secondary{
-	background-color: #FFFFFF2C;
+.feature-cards-blockchain{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 0px;
 }
-.btn-secondary:hover{
-	background-color: #FFFFFF2C;
+.feature-cards-blockchain li{
+	color: #fff;
+    list-style-type: none;
+    height: 301px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin-right: 15px;
+    border-radius: 20px;
+    padding: 23px;
+}
+.feature-row-content{
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
 }
 
 .join-holder {
@@ -219,13 +269,33 @@ header{
 }
 .social-connect li{
 	display: inline-block;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 7px;
+    height: 45px;
+    vertical-align: middle;
+	margin-right: 22px;
 }
 .social-connect li img{
-	width: 127px;
+	width: 109px;
 }
 footer p{
 	font-size: 16px;
 	color: #fff;
+	margin-bottom: 0;
+}
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+.copyright p{
+	font-size: 14px;
+	color: #D3CCEA;
+}
+
+.copyright{
+	border: 1px solid #dee2e638;
+	padding: 12px;
 }
 
 .feature-cards li>div{
@@ -234,6 +304,42 @@ footer p{
     justify-content: center;
     align-items: center;;
 }
+
+.wow{
+	visibility: hidden;
+ }
+
+ .feature-blockchain-content{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .feature-blockchain-cards{
+	color: #fff;
+	padding: 30px 20px 20px 24px;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+ }
+ .feature-blockchain-cards:hover{
+	transform: scale(1.1);
+ }
+ .feature-blockchain-cards h3{
+	font-size: 20px;
+	height: 142px;
+ }
+ .feature-blockchain-cards a{
+	color: #D0D0D0;
+	font-size: 14px;
+	text-decoration: none;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+ .feature-blockchain-cards a img{
+	width: 24px;
+ }
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -280,19 +386,44 @@ footer p{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+	h4{
+		font-size: 16px;
+	}
 	.banner-content{
 		position: static;
 		width: 100%;
 		padding: 16px;
-		margin-top: 100px;
+	}
+	.banner{
+		height: auto;
+		padding: 35px 0px;
+	}
+	#particles-js{
+		display: none;
+	}
+	.features-blockchain, .features{
+		padding: 32px 20px;
+	}
+	.feature-cards-blockchain{
+		grid-template-columns: auto;
+		margin-top: 30px;
+	}
+	.feature-cards-blockchain li{
+		height: auto;
+		padding: 20px;
+		margin-top: 20px;
+	}
+	footer .container{
+		text-align: center;
+	}
+	footer .d-flex{
+		align-items: center !important;
 	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-	.features{
-	    padding: 46px;
-	}
+
 }
 
 
@@ -315,6 +446,9 @@ footer p{
  }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
+	h1, h2{
+		font-size: 38px;
+	}
 	.feature-cards{
 		margin-top: 50px;
 	}
@@ -336,6 +470,20 @@ footer p{
 		width: 102px;
 	}
  }
- .wow{
-	visibility: hidden;
+@media only screen and (min-width: 1024px) and (max-width: 1199px){ 
+	.features, .features-blockchain{
+		padding: 38px;
+	}
+	.feature-cards li{
+		width: 179px;
+	}
+	.feature-cards li img{
+		width: 98px;
+	}
+	h4{
+		font-size: 19px;
+	}
+	h2{
+		font-size: 38px;
+	}
  }
