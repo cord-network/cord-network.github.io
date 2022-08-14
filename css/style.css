@@ -89,10 +89,6 @@ html {
 		padding-top: 0px !important;
 		margin-top: 20px !important;
 	}
-	.container-fluid {
-		height: 100%;
-		overflow: scroll; /* don't show content that exceeds my height */
-	}
 	.display-block {
 		position: absolute;
 		top: 0px;
@@ -397,6 +393,7 @@ footer a{
 	.banner{
 		height: auto;
 		padding: 35px 0px;
+		overflow: auto;
 	}
 	#particles-js{
 		display: none;
