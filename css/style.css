@@ -2,6 +2,7 @@ body,
 html {
 	height: 100%;
 	margin: 0;
+	font-family: system-ui;
 }
 
 .background-container {
@@ -62,8 +63,9 @@ html {
 }
 .img-width
 {
-    width:200px;
+	width: 125px;
 }
+
 
 @media only screen and (max-width:767px) {
 	.font-65 {
@@ -87,10 +89,6 @@ html {
 		padding-top: 0px !important;
 		margin-top: 20px !important;
 	}
-	.container-fluid {
-		height: 100%;
-		overflow: scroll; /* don't show content that exceeds my height */
-	}
 	.display-block {
 		position: absolute;
 		top: 0px;
@@ -111,7 +109,8 @@ html {
     }
     .img-width
     {
-        width: 150px ;
+		width: 107px;
+		margin-bottom: 20px;
     }
     .font-regular {
         font-family: "Urbanist_semiBold" !important;
@@ -121,3 +120,398 @@ html {
 	}
 
 }
+
+
+/*
+New ui styles  
+*/
+
+.brand-bg-color{
+	background-color: #463B6B;
+}
+.text-brand{
+	color: #463B6B;
+}
+.btn-primary {
+	background-color: #463B6B;
+	border: 1px solid #463B6B;
+}
+.btn-primary:hover{
+	background-color: #fff;
+	border: 1px solid #463B6B;
+	color: #463B6B !important;
+}
+.badge-info{
+	background-color: #FFFFFF2C;
+	border: 1px solid #FFFFFF2C;
+	cursor: default !important;
+	box-shadow:none !important;
+}
+.btn-info:hover{
+	background-color: #FFFFFF2C;
+	border: 1px solid #FFFFFF2C;
+}
+
+header{
+	position: fixed;
+    left: 0;
+    right: 0;
+	z-index: 2;
+	top:0
+}
+.header-fixed{
+	box-shadow: 0px 3px 6px #00000029;
+}
+.banner{
+	margin-top: 67px;
+	color: #fff;
+	height: 709px;
+	position: relative;
+	overflow: hidden;
+}
+.banner-content{
+	position: absolute;
+	width: 522px;
+    top: 22%;
+}
+.banner-content h1{
+	font-size: 52px;
+}
+.features, .features-blockchain{
+    padding: 118px;
+}
+.features-blockchain{
+	background-color: #F1F1F1;
+}
+.features-blockchain ul{
+	text-align: center;
+}
+.features-blockchain ul li{
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+	margin: 15px;
+	width: 246px;
+    height: 247px;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+.features-blockchain ul li:hover{
+	transform: scale(1.1);
+}
+
+h2{
+	font-size: 52px;
+	margin-bottom: 0;
+}
+h4{
+	font-size: 22px;
+	margin-bottom: 0;
+}
+.features p{
+	font-size: 18px;
+}
+.feature-cards {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+}
+.feature-cards li {
+	background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 233px;
+    height: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+	flex-direction: column;
+	list-style-type: none;
+}
+.feature-cards li h4{
+	font-size: 18px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.feature-cards-blockchain{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 0px;
+}
+.feature-cards-blockchain li{
+	color: #fff;
+    list-style-type: none;
+    height: 301px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin-right: 15px;
+    border-radius: 20px;
+    padding: 23px;
+}
+.feature-row-content{
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.join-holder {
+	padding: 50px 0 0 0;
+	background-color: #F1F1F1;
+	overflow: hidden;
+}
+.join-holder h2, .join-holder p{
+	color: #463B6B;
+	margin-bottom: 20px;
+}
+.join-holder p{
+    font-weight: 400;
+	font-size: 14px;
+}
+.join-holder h2{
+	font-size: 70px;
+	font-size:3.5vw;
+}
+.social-connect li{
+	display: inline-block;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 7px;
+    height: 45px;
+    vertical-align: middle;
+	margin-right: 22px;
+	width: 158px;
+	margin-bottom: 23px;
+}
+.social-connect li img{
+	width: 109px;
+}
+footer p{
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 0;
+}
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+.copyright p{
+	font-size: 14px;
+	color: #D3CCEA;
+}
+
+.copyright{
+	border: 1px solid #dee2e638;
+	padding: 12px;
+}
+
+.feature-cards li>div{
+	height: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.illustration-holder{
+	position: absolute;
+	right: 0;
+}
+
+.wow{
+	visibility: hidden;
+ }
+
+ .feature-blockchain-content{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .feature-blockchain-cards{
+	color: #fff;
+	padding: 30px 20px 20px 24px;
+	border-radius: 20px;
+ }
+ .feature-blockchain-cards h3{
+	font-size: 20px;
+	height: 142px;
+ }
+ .feature-blockchain-cards a{
+	color: #D0D0D0;
+	font-size: 14px;
+	text-decoration: none;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+ .feature-blockchain-cards a img{
+	width: 24px;
+ }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	.feature-cards{
+		grid-template-columns: auto;
+		padding-left: 0;
+		margin-top: 40px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+	.social-connect li{
+		margin: 10px;
+	}
+	.feature-cards li>div{
+		height: 152px;
+	}
+	.feature-cards li img{
+		width: 100%;
+	}
+	.features-blockchain ul li{
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	h1{
+		font-size: 35px !important;
+	}
+	h2{
+		font-size: 35px !important;
+	}
+	p{
+		font-size: 12px !important;
+	}
+	.banner-content h1{
+		font-size: 34px;
+	}
+	.features, .banner{
+		padding: 24px;
+	}
+	.feature-cards li{
+		margin: 0;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+	.illustration-holder{
+		display: none;
+	}
+	h4{
+		font-size: 16px;
+	}
+	.banner-content{
+		position: static;
+		width: 100%;
+		padding: 16px;
+	}
+	.banner{
+		height: auto;
+		padding: 35px 0px;
+		overflow: auto;
+	}
+	#particles-js{
+		display: none;
+	}
+	.features-blockchain, .features{
+		padding: 32px 20px;
+	}
+	.feature-cards-blockchain{
+		grid-template-columns: auto;
+		margin-top: 30px;
+	}
+	.feature-cards-blockchain li{
+		height: auto;
+		padding: 20px;
+		margin-top: 20px;
+	}
+	footer .container{
+		text-align: center;
+	}
+	footer .d-flex{
+		align-items: center !important;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+
+ }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+	.feature-cards{
+		grid-template-columns: auto;
+		padding-left: 0;
+		margin-top: 40px;
+	}
+	.feature-cards li{
+		height: auto;
+		margin: 0;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+	h1, h2{
+		font-size: 38px;
+	}
+	.feature-cards{
+		margin-top: 50px;
+		text-align: center;
+	}
+	.feature-cards li{
+		height: auto;
+		margin: 0;
+		margin: 20px;
+		display: inline-block;
+	}
+	.feature-cards{
+		display: block;
+	}
+ }
+@media only screen and (min-width: 992px) and (max-width: 1023px){ 
+	.feature-cards li{
+		margin: 0;
+		margin-bottom: 20px;
+		width: 172px;		
+	}
+	.feature-cards li img{
+		width: 102px;
+	}
+ }
+@media only screen and (min-width: 1024px) and (max-width: 1199px){ 
+	.features, .features-blockchain{
+		padding: 38px;
+	}
+	.feature-cards li{
+		width: 179px;
+	}
+	.feature-cards li img{
+		width: 98px;
+	}
+	h4{
+		font-size: 19px;
+	}
+	h2{
+		font-size: 38px;
+	}
+ }
