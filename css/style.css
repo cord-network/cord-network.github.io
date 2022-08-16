@@ -153,12 +153,14 @@ New ui styles
 }
 
 header{
-	box-shadow: 0px 3px 6px #00000029;
 	position: fixed;
     left: 0;
     right: 0;
 	z-index: 2;
 	top:0
+}
+.header-fixed{
+	box-shadow: 0px 3px 6px #00000029;
 }
 .banner{
 	margin-top: 67px;
