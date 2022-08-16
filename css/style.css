@@ -141,9 +141,11 @@ New ui styles
 	border: 1px solid #463B6B;
 	color: #463B6B !important;
 }
-.btn-info{
+.badge-info{
 	background-color: #FFFFFF2C;
 	border: 1px solid #FFFFFF2C;
+	cursor: default !important;
+	box-shadow:none !important;
 }
 .btn-info:hover{
 	background-color: #FFFFFF2C;
@@ -183,11 +185,18 @@ header{
 	text-align: center;
 }
 .features-blockchain ul li{
-	width: 242px;
 	list-style-type: none;
 	display: inline-block;
 	text-align: left;
 	margin: 15px;
+	width: 246px;
+    height: 247px;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	vertical-align: middle;
+}
+.features-blockchain ul li:hover{
+	transform: scale(1.1);
 }
 
 h2{
@@ -211,7 +220,7 @@ h4{
     margin: 15px;
     padding: 20px;
     text-align: center;
-    width: 217px;
+    width: 233px;
     height: 233px;
     display: flex;
     justify-content: center;
@@ -223,6 +232,7 @@ h4{
 .feature-cards li h4{
 	font-size: 18px;
 	margin-top: 15px;
+	font-weight: bold;
 }
 .feature-cards-blockchain{
 	display: grid;
@@ -254,6 +264,7 @@ h4{
 }
 .join-holder h2, .join-holder p{
 	color: #463B6B;
+	margin-bottom: 20px;
 }
 .join-holder p{
     font-weight: 400;
@@ -271,6 +282,8 @@ h4{
     height: 45px;
     vertical-align: middle;
 	margin-right: 22px;
+	width: 158px;
+	margin-bottom: 23px;
 }
 .social-connect li img{
 	width: 109px;
@@ -300,6 +313,10 @@ footer a{
     justify-content: center;
     align-items: center;;
 }
+.illustration-holder{
+	position: absolute;
+	right: 0;
+}
 
 .wow{
 	visibility: hidden;
@@ -316,10 +333,6 @@ footer a{
 	color: #fff;
 	padding: 30px 20px 20px 24px;
 	border-radius: 20px;
-	transition: all 0.3s ease;
- }
- .feature-blockchain-cards:hover{
-	transform: scale(1.1);
  }
  .feature-blockchain-cards h3{
 	font-size: 20px;
@@ -354,6 +367,17 @@ footer a{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 767px) {
+	.feature-cards li>div{
+		height: 152px;
+	}
+	.feature-cards li img{
+		width: 100%;
+	}
+	.features-blockchain ul li{
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
 	h1{
 		font-size: 35px !important;
 	}
@@ -370,18 +394,17 @@ footer a{
 		padding: 24px;
 	}
 	.feature-cards li{
-		height: auto;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		width: 100%;
-	}
-	.feature-cards li img{
-		width: 104px;
 	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
+	.illustration-holder{
+		display: none;
+	}
 	h4{
 		font-size: 16px;
 	}
@@ -437,7 +460,7 @@ footer a{
 	.feature-cards li{
 		height: auto;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		width: 100%;
 	}
  }
@@ -448,17 +471,20 @@ footer a{
 	}
 	.feature-cards{
 		margin-top: 50px;
+		text-align: center;
 	}
 	.feature-cards li{
 		height: auto;
 		margin: 0;
-		margin-bottom: 20px;
-		width: 92%;
+		margin: 20px;
+		display: inline-block;
+	}
+	.feature-cards{
+		display: block;
 	}
  }
 @media only screen and (min-width: 992px) and (max-width: 1023px){ 
 	.feature-cards li{
-		height: auto;
 		margin: 0;
 		margin-bottom: 20px;
 		width: 172px;		
