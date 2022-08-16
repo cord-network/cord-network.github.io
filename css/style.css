@@ -369,6 +369,9 @@ footer a{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 767px) {
+	.social-connect li{
+		margin: 10px;
+	}
 	.feature-cards li>div{
 		height: 152px;
 	}
