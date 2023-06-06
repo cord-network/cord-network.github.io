@@ -214,7 +214,7 @@ header{
 	position: absolute;
     width: 76%;
     top: 5%;
-    left: 15%;
+	left: 14%;
 	z-index: 1;
 }
 .banner-second{
@@ -299,6 +299,7 @@ header{
 h2{
 	font-size: 52px;
 	margin-bottom: 0;
+	color: #40172F;
 }
 h4{
 	font-size: 22px;
@@ -453,7 +454,7 @@ footer a{
  .banner-para-btn  {
 	position: relative;
 	left: 231px;
-	margin-left: 14em;
+	margin-left: 13.5em;
 	/* margin-top: 150px; */
 }
 
@@ -796,7 +797,7 @@ background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFCD64 100%) 0% 0% 
 	background-size: 49%;
 	background-position: right 15em;
     background-repeat: no-repeat;
-	padding-top: 32em;
+	padding-top: 31em;
   }
 
   .build-cards{
