@@ -524,6 +524,12 @@ footer a{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 991px) {
+	.developer-para-mobile{
+		display: block !important;
+	}
+	.developer-para-desktop{
+		display: none;
+	}
 	.join-holder h2{
 		padding-left: 21px;
 	}
@@ -819,5 +825,8 @@ background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFCD64 100%) 0% 0% 
 	display: none;
   }
   .head-mobile{
+	display: none;
+  }
+  .developer-para-mobile{
 	display: none;
   }
