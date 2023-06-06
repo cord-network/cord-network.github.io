@@ -398,12 +398,12 @@ footer a{
     justify-content: center;
     align-items: center;;
 }
-.illustration-holder{
+/* .illustration-holder{
 	position: absolute;
 	right: 0px;
 	top :0px;
 	width: 695px;
-}
+} */
 .bg-image-cord {
 	background-image: url(../image/background.png);
 }
@@ -717,4 +717,11 @@ padding: 12px 20px;
 	height: 86px;
 /* UI Properties */
 background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFCD64 100%) 0% 0% no-repeat padding-box;
+  }
+
+.banner{
+	background-image: url('../image/background.png');
+	background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
   }
