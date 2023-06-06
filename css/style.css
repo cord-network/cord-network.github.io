@@ -102,6 +102,9 @@ html {
 }
 
 @media only screen and (max-width:767px) {
+	.features h2{
+		font-size: 30px !important;
+	}
 	.font-65 {
 		font-size: 33px !important;
 	}
@@ -767,7 +770,7 @@ transition: all 0.3s ease;
 .banner-para-dev  {
 	position: relative;
 	left: 215px;
-	margin-top: 50px;
+	margin-top: 13px;
 }
 .img-width-right-arrow {
 	width: 37px;
