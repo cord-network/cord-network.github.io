@@ -76,7 +76,7 @@ html {
 	width: 90px;
 }
 .img-width-stats {
-	width: 857px;
+	width: 100%;
 }
 .img-stats-mbl {
 	display: none !important;
@@ -87,7 +87,8 @@ html {
 .posi-stats {
 	position: relative;
     left: 220px;
-	top: 10px;
+    top: 24px;
+	padding-bottom: 23em;
 }
 .developer-para {
 	position: relative;
@@ -143,7 +144,6 @@ html {
     .img-width
     {
 		width: 107px;
-		margin-bottom: 20px;
     }
     .font-regular {
         font-family: "Urbanist_semiBold" !important;
@@ -182,7 +182,7 @@ New ui styles
 }
 
 .badge-info{
-	background-color: #FFFFFF2C;
+	background: #FFFFFF9A 0% 0% no-repeat padding-box;
 	border: 1px solid #FFFFFF2C;
 	cursor: default !important;
 	box-shadow:none !important;
@@ -210,8 +210,10 @@ header{
 }
 .banner-content{
 	position: absolute;
-	width: 864px;
-    top: 10%;
+    width: 76%;
+    top: 5%;
+    left: 7%;
+	z-index: 1;
 }
 .banner-second{
 	color: #fff;
@@ -244,8 +246,9 @@ header{
 }
 
 .banner-para-cord {
-	position: absolute;
-	left: 215px;
+	/* position: absolute; */
+	/* left: 215px; */
+	left: 12em;
 	width: 475px;
 }
 .banner-content p {
@@ -346,14 +349,15 @@ h4{
 .join-holder {
 	padding: 10px 0 0 0;
 	overflow: hidden;
+	margin-top: 15em;
 }
 .join-holder h2, .join-holder p{
-	color: #463B6B;
+	color: #40172F;
 	margin-bottom: 20px;
 }
 .join-holder p{
     font-weight: 400;
-	font-size: 14px;
+	font-size: 18px;
 }
 .join-holder h2{
 	font-size: 70px;
@@ -361,17 +365,15 @@ h4{
 }
 .social-connect li{
 	display: inline-block;
-    border: 2px solid #000;
+	margin: 7px;
+    /* border: 2px solid #000;
     border-radius: 10px;
     padding: 7px;
     height: 45px;
     vertical-align: middle;
 	margin-right: 22px;
 	width: 158px;
-	margin-bottom: 23px;
-}
-.social-connect li img{
-	width: 109px;
+	margin-bottom: 23px; */
 }
 footer p{
 	font-size: 16px;
@@ -389,7 +391,6 @@ footer a{
 
 .copyright{
 	border: 1px solid #dee2e638;
-	padding: 12px;
 }
 
 .feature-cards li>div{
@@ -443,7 +444,7 @@ footer a{
  .banner-para-btn  {
 	position: relative;
 	left: 215px;
-	margin-top: 150px;
+	/* margin-top: 150px; */
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -506,6 +507,16 @@ footer a{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 991px) {
+	.join-holder{
+		text-align: left !important;
+		margin-top: 5em;
+	}
+	.desktop-device{
+		display: none;
+	}
+	.mobile-device{
+		display: block !important;
+	}
 	h4{
 		font-size: 16px;
 	}
@@ -515,9 +526,9 @@ footer a{
 		padding: 16px;
 	}
 	.banner{
-		height: auto;
+		/* height: auto; */
 		padding: 35px 0px;
-		overflow: auto;
+		/* overflow: auto; */
 	}
 	#particles-js{
 		display: none;
@@ -543,7 +554,7 @@ footer a{
 	.banner-para-btn  {
 		position: relative;
 		left: 70px;
-		margin-top: 150px;
+		/* margin-top: 150px; */
 	}
 	.banner-para-dev  {
 		position: relative;
@@ -570,17 +581,20 @@ footer a{
 		color: #fff;
 		position: relative;
 		top:0px;
+		padding-top: 9em !important;
+		background-size: 85% !important;
+		background-position: right 8em !important;
 	}
 	.banner-content-second{
-		position: relative;
+	    position: relative;
 		width: 100%;
-		top: 100px;
+		top: 22em;
 	}
 	.img-width-circle-cord {
 		width: 25px;
 	}
 	.banner-para-cord {
-		position: absolute;
+		position: static;
 		left: 70px;
 		width: 80%;
 	}
@@ -588,9 +602,13 @@ footer a{
 		position: relative;
 		left: 0px;
 		top: 30px;
+		display: flex;
+    	justify-content: flex-end;
 	}
 	.img-width-stats {
-		width: 100%;
+		width: 268px;
+		margin-right: 21px;
+		margin-right: 21px;
 	}
 	.img-stats-mbl {
 		display: block !important;
@@ -602,8 +620,15 @@ footer a{
 		position: relative;
 		left: 0%;
 	}
+	p{
+		font-size: 16px !important;
+	}
+	.features p {
+		padding-left: 54px;
+	}
+	
 	.footer-container {
-		display: none
+		display: none !important;
 	};
 	.img-stats-mbl {
 		display: block !important;
@@ -637,6 +662,11 @@ footer a{
  }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){ 
+	.banner-second{
+		padding-top: 9em !important;
+		background-size: 65% !important;
+		background-position: right 4em !important;
+	}
 	h1, h2{
 		font-size: 38px;
 	}
@@ -684,9 +714,11 @@ footer a{
 
  .btn-light-cord {
 border: 1px solid #40172F;
-background: #FFFAEF;
+background: transparent;
 border-radius: 30px;
-padding: 12px 20px;
+padding: 6px 25px 5px 7px;
+font-size: 14px;
+transition: all 0.3s ease;
  }
  .btn-light-cord:hover {
 	background: #40172F;
@@ -702,26 +734,47 @@ padding: 12px 20px;
 }
 .img-width-right-arrow {
 	width: 37px;
+	margin-right: 10px;
 }
 .grad1 {
-	height: 1466px;
 	background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFAEF 68%, #FFCD64 100%) 0% 0% no-repeat padding-box;
   }
 
   .grad2 {
-	height: 1200px;
+	/* height: 1200px; */
 	background: transparent linear-gradient(180deg, #FFCD64 20%, #FFFAEF 100%, #FFFFFF 0%) 0% 0% no-repeat padding-box;
   
   }
   .footer-container {
 	height: 86px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 /* UI Properties */
 background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFCD64 100%) 0% 0% no-repeat padding-box;
   }
 
-.banner{
-	background-image: url('../image/background.png');
-	background-size: 50%;
-    background-position: right;
+.banner-second{
+    content: "";
+    background-image: url('../image/background.png');
+	background-size: 49%;
+	background-position: right 15em;
     background-repeat: no-repeat;
+    padding-top: 35em;
+  }
+
+  .build-cards{
+	width: 84%;
+  }
+  .join-holder {
+	text-align: center;
+  }
+  .join-holder p{
+	padding-left: 44px;
+  }
+  .join-holder h2{
+	padding-left: 44px;
+  }
+  .mobile-device{
+	display: none;
   }
