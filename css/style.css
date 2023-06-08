@@ -682,6 +682,16 @@ footer a{
 	.img-stats-desktop {
 		display: none !important;
 	}
+	.btn-light-cord {
+		background: #40172F;
+		border: 1px solid #40172F;
+		color: #fff !important;
+		border: 1px solid #40172F;
+		border-radius: 30px;
+		padding: 6px 25px 5px 7px;
+		font-size: 14px;
+		transition: all 0.3s ease;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -761,6 +771,7 @@ footer a{
  .btn-light-cord {
 border: 1px solid #40172F;
 background: transparent;
+color: #40172F;
 border-radius: 30px;
 padding: 6px 25px 5px 7px;
 font-size: 14px;
